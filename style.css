@@ -5,7 +5,17 @@
 }
 
 :root{
-    --image-path:"./img/imagem2.jpg";
+    --imagem-1:url(./img/Breloom.png);
+    --imagem-2:url(./img/Cooking.gif);
+    --imagem-3:url(./img/Green-princess.png);
+    --imagem-4:url(./img/JKM3-Atomic-Kitties.png);
+    --imagem-5:url(./img/Lara.jpg);
+    --imagem-6:url(./img/Latte-Camomille.png);
+    --imagem-7:url(./img/Potionomics-Luna.png);
+    --imagem-8:url(./img/Space-Dragon.png);
+    --imagem-9:url(./img/Terraria-Halloween.png);
+    --imagem-10:url(./img/Watermelon.png);
+    --selected-image: var(--imagem-1);
 }
 
 body{
@@ -16,7 +26,8 @@ body{
 }
 
 .mainframe{
-    background: image-set(var(--image-path));
+    background-image: var(--selected-image);
+    background-size: cover;
 }
 
 .container{
@@ -39,4 +50,5 @@ body{
 
 button{
     padding:15px;
+    font-size: 2rem;
 }
