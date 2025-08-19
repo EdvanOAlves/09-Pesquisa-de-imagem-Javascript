@@ -3,6 +3,8 @@
 const buttonImage = document.getElementById('update-image')
 const buttonAuto = document.getElementById('auto-slideshow')
 const slideTime = 3000
+const mainframe = document.getElementById('mainframe')
+let sliding = false
 
 function searchImage() {
     const imageInput = document.getElementById('input').value
@@ -12,12 +14,14 @@ function searchImage() {
 }
 
 function slideShow() {
-    for (let i = 0; i < 10; i++) {
-        setTimeout(function changeImg() {
-            document.documentElement.style.setProperty('--selected-image', `var(--imagem-${i + 1})`)
-        }, slideTime * i
-        )
+    sliding = !sliding
+
+    if (sliding){
+        mainframe.classList.add('animado')
+    }else{
+        mainframe.classList.toggle('animado')
     }
+    
 }
 
 buttonImage.addEventListener('click', searchImage)

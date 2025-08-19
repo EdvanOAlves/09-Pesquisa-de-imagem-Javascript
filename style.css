@@ -25,7 +25,7 @@ body{
     transition: 0.5s;
 }
 
-.mainframe{
+#mainframe{
     background-image: var(--selected-image);
     background-size: cover;
 }
@@ -51,4 +51,51 @@ body{
 button{
     padding:15px;
     font-size: 2rem;
+}
+
+.animado{
+    animation: autoSlider 40s infinite;
+}
+
+@keyframes autoSlider {
+    0%, 9% {
+        background-image: var(--imagem-1);
+
+    }
+    10%, 19% {
+        background-image: var(--imagem-2);
+
+    }
+    20%, 29% {
+        background-image: var(--imagem-3);
+
+    }
+    30%, 39% {
+        background-image: var(--imagem-4);
+
+    }
+    40%, 49% {
+        background-image: var(--imagem-5);
+
+    }
+    50%, 59% {
+        background-image: var(--imagem-6);
+
+    }
+    60%, 69% {
+        background-image: var(--imagem-7);
+
+    }
+    70%, 79% {
+        background-image: var(--imagem-8);
+
+    }
+    80%, 89% {
+        background-image: var(--imagem-9);
+
+    }
+    90%, 99% {
+        background-image: var(--imagem-10);
+
+    }
 }
